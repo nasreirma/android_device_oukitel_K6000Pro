@@ -1,6 +1,9 @@
 #
-# system.prop for Lenovo K4 Note
+# system.prop for Oukitel K6000 Pro
 #
+
+# SDcard as primary
+ro.vold.primary_physical=1
 
 # RIL
 rild.libpath=/system/lib64/mtk-ril.so

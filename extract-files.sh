@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VENDOR=lenovo
-DEVICE=A7010a48
+VENDOR=oukitel
+DEVICE=K6000Pro
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 

@@ -5,7 +5,7 @@
 # Date : WK14.XX
 # Operation : Migration
 # Purpose : for exec labels defined by mtk
-allow shell mtk_6620_launcher_exec:file rx_file_perms;
+allow shell conn_launcher_exec:file rx_file_perms;
 allow shell stp_dump3_exec:file rx_file_perms;
 allow shell GoogleOtaBinder_exec:file rx_file_perms;
 allow shell MtkCodecService_exec:file rx_file_perms;

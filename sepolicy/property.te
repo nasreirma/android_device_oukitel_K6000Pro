@@ -192,3 +192,12 @@ type mtk_em_auto_answer_prop, property_type;
 #=============allow smart audio pa set property ==============
 type smart_audio_prop, property_type;
 
+#Added By Ottavio97
+type ctl_qmc6983d_prop, property_type;
+type ctl_memsicd3416x_prop, property_type;
+type nvram_prop, property_type;
+type pq_conf_prop, property_type;
+type ril_msim_power_prop, property_type;
+type ril_sim_inserted_status, property_type;
+type serial_number_prop, property_type;
+type vold_encryption_type_prop, property_type;

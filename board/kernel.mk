@@ -16,4 +16,5 @@ MTK_K64_SUPPORT := yes
 #TARGET_KERNEL_CONFIG := K6000Pro_defconfig
 #BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 #MTK_APPENDED_DTB_SUPPORT := yes
-TARGET_PREBUILT_KERNEL := device/oukitel/K6000Pro/kernel
+#TARGET_PREBUILT_KERNEL := device/oukitel/K6000Pro/kernel
+TARGET_PREBUILT_BOOT := device/oukitel/K6000Pro/boot.img

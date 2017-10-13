@@ -10,6 +10,10 @@ service akmd8963 /system/bin/akmd8963
     user system
     group system
 
+service mmc3524xd /system/bin/mmc3524xd
+    user system
+    group system
+
 
 on post-fs
 #

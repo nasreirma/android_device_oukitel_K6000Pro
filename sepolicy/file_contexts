@@ -8,7 +8,7 @@
 /system/xbin/mnld                                               u:object_r:mnld_exec:s0
 /system/bin/muxreport                                           u:object_r:muxreport_exec:s0
 /system/bin/msensord                                            u:object_r:msensord_exec:s0
-/system/bin/qmc6983d                                            u:object_r:qmc6983d_exec:s0
+/system/bin/mmc3524xd                                            u:object_r:mmc3524xd_exec:s0
 /system/bin/mxg2320d                                            u:object_r:mxg2320d_exec:s0
 /system/bin/memsicd3416x                                        u:object_r:memsicd3416x_exec:s0
 /system/bin/mtk_agpsd                                           u:object_r:mtk_agpsd_exec:s0
@@ -146,3 +146,16 @@
 /data/ccci_cfg(/.*)?                                            u:object_r:ccci_cfg_file:s0
 /data/.tp(/.*)?                                                 u:object_r:thermal_manager_data_file:s0
 /data/nfc_socket(/.*)?                                          u:object_r:nfc_socket:s0
+
+# Fingerprint
+/dev/gf66xx-spi     u:object_r:gx_fpd_device:s0
+/dev/ttyACM[0-9]*   u:object_r:gx_fpd_device:s0
+/dev/goodix_fp*     u:object_r:gx_fpd_device:s0
+/data/system/fingerprint(/.*)? 	u:object_r:gx_fpd_data_file:s0
+/persist/data/gxfp(/.*)? 	u:object_r:gx_fpd_data_file:s0
+/system/bin/gx_fpd 	u:object_r:gx_fpd_exec:s0
+/data/system/users/[0-9]+/fpdata(/.*)? u:object_r:fingerprintd_data_file:s0
+/system/lib64/libfp_client.so      u:object_r:gx_fpd_lib_file:s0
+/system/lib64/libfpservice.so      u:object_r:gx_fpd_lib_file:s0
+/system/lib64/libalgoandroid.so   u:object_r:gx_fpd_lib_file:s0
+/dev/teei_fp u:object_r:teei_fp_device:s0

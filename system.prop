@@ -34,7 +34,7 @@ persist.af.audio_patch_fm=1
 ro.zygote.preload.enable=0
 
 # Disable Navigation Bar
-qemu.hw.mainkeys=1
+qemu.hw.mainkeys=0
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false

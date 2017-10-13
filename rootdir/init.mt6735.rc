@@ -588,6 +588,12 @@ service msensord /system/bin/msensord
     oneshot
 
 service mxg2320d /system/bin/mxg2320d
+    
+service mmc3524xd /system/bin/mmc3524xd
+    user system
+    group system
+    class main
+
     disabled
     user system
     group system
@@ -643,4 +649,17 @@ service etsd /system/bin/etsd
 
 service fingerprintd /system/bin/fingerprintd
     class late_start
+    user system
+
+service gx_fpd /system/bin/gx_fpd
+    class late_start
     user root
+    group root system
+
+# 添加自动恢复出厂设置 	
+service freset /system/bin/freset.sh
+	class core
+	user system
+	group cache
+	disabled
+	oneshot 
